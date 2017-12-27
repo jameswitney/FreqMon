@@ -1,0 +1,9 @@
+
+#!/bin/bash
+
+#This line needs no explanation - pull in the cpuinfo, then grep out the parts we want.
+#Watch is used as an easy solution to keep updating the script
+
+watch -n0 "cat /proc/cpuinfo| grep 'cpu MHz'"
+
+
